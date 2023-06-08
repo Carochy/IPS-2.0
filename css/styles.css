@@ -10836,7 +10836,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 .text-white-75 {
@@ -11015,6 +11015,18 @@ header.masthead h1, header.masthead .h1 {
 .clients {
   padding-top: 20px;
 }
+
+#about{
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    /* background: linear-gradient(0deg, #D55E62, #4B4C4B); */
+    background: #DB0F0F;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
 
 /* .clients .swiper-slide img {
   opacity: 0.5;
