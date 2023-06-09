@@ -11027,31 +11027,19 @@ header.masthead h1, header.masthead .h1 {
     background-size: cover;
   }
 
+    /* Ajustar el tamaño de las imágenes */
+    .logo-slider img {
+      width: 200px; /* Establece un ancho fijo para las imágenes */
+      height: 200px; /* Establece una altura fija para las imágenes */
+      object-fit: contain; /* Ajusta el contenido de la imagen para que quepa dentro del contenedor */
+  }
+  
+  /* Ajustar el diseño del slider */
+  .slick-slide {
+      margin: 10px 5px; /* Ajusta el margen horizontal entre las imágenes */
+  }
+  
+  .slick-list {
+      padding: 10px; /* Ajusta el padding del contenedor del slider */
+  }
 
-/* .clients .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-  filter: grayscale(100);
-}
-
-.clients .swiper-slide img:hover {
-  filter: none;
-  opacity: 1;
-}
-
-.clients .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  background-color: #ddd;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
-} */
