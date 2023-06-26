@@ -10837,6 +10837,7 @@ body {
 
 .page-section {
   padding: 5rem 0;
+  background-color: #000;
 }
 
 .text-white-75 {
@@ -10930,7 +10931,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   /* background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg1.jpg"); */
-  background: linear-gradient(to bottom, rgb(19 17 17 / 70%) 0%, rgb(112 74 74 / 45%) 100%), url(../assets/img/bg1.jpg);
+  background:url(../assets/img/Portada.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10997,12 +10998,12 @@ header.masthead h1, header.masthead .h1 {
 
 
 #services {
-  background-image: url("../assets/img/Portada_rev00.jpg")!important;
+  background-image: url("../assets/img/Servicios.png")!important;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px; /* Ajusta la altura según tus necesidades */
+  /*height: 500px;  Ajusta la altura según tus necesidades */
 }
 
 
@@ -11017,10 +11018,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 #about{
-    padding-top: 10rem;
-    padding-bottom: calc(10rem - 4.5rem);
-    /* background: linear-gradient(0deg, #D55E62, #4B4C4B); */
-    background: #DB0F0F;
+    background-color: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -11049,7 +11047,7 @@ header.masthead h1, header.masthead .h1 {
 
 
   #Carousel{
-    background-image: url("../assets/img/2.jpg")!important;
+    background-color:#DB0F0F !important;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

@@ -1,0 +1,14 @@
+{
+    "produccion":
+    {
+        "hostdb":"127.0.0.1",
+        "namedb":"ips",
+        "userdb":"root",
+        "passdb":"",
+        "charsetdb":"utf8",
+        "collatedb":"utf8_unicode_ci",
+        "typedb":"mysql"
+        
+    }
+
+}

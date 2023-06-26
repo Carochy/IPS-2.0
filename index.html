@@ -60,24 +60,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form id="loginForm" method="post" action="Portal_cliente/index.php">
                             <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Email</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <label for="username" class="form-label">Usuario</label>
+                              <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp" placeholder="Ingresa tu usuario" required >
                             </div>
                             <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
+                              <label for="password" class="form-label">Contraseña</label>
+                              <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña" required>
                             </div>
                             <div class="mb-3 form-check">
                               <input type="checkbox" class="form-check-input" id="exampleCheck1">
                               <label class="form-check-label" for="exampleCheck1">Recordar</label>
                             </div>
                             
-                          </form>
+                        </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                        <button type="submit" class="btn btn-primary" name="btnIngresar">Ingresar</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
@@ -100,84 +100,75 @@
         <!-- About-->
         <section class="page-section bg-primary" id="about">
             <div class="container">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-9 text-center" data-aos="fade-up" data-aos-duration="1000">
-                        <h2 class="text-white mt-0">Sobre nosotros</h2>
-                        <div class="mb-2"><i class="bi bi-building fs-1 text-white"></i></div>
-                        <p class="text-white-75 mb-4">Somos una empresa <strong>familiar</strong>  establecida en Argentina desde 1993, dedicada a la
-                            importación y comercialización de repuestos para automóviles. Nos especializamos
-                            en vehículos japoneses y coreanos.
-                            
-                            El automóvil es uno de los bienes más importantes en la vida de los argentinos,
-                            siendo este el medio de transporte que elegimos para movilizarnos y también como
-                            herramienta esencial de trabajo. El correcto arreglo y mantenimiento de nuestros
-                            vehículos es indispensable, para ello estamos nosotros, para brindar y dar acceso a
-                            los repuestos necesarios.</p>
-                        <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
+                <div class="row justify-content-center">
+                    <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <h2> <strong>Sobre</strong>  <span class="text-white mt-0">Nosotros</span>  </h2>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-6 text-center" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 class="text-white mt-0">Mision</h2>
-                        <div class="mb-2"><i class="bi bi-folder-check fs-1 text-white"></i></div>
-                        <p class="text-white-75 mb-4">Somos una empresa familiar establecida en Argentina desde 1993, dedicada a la
-                            importación y comercialización de repuestos para automóviles. Nos especializamos
-                            en vehículos japoneses y coreanos.
-                            
-                            El automóvil es uno de los bienes más importantes en la vida de los argentinos,
-                            siendo este el medio de transporte que elegimos para movilizarnos y también como</p>
+                    <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="text-white mt-3"><i class="bi bi-building fs-1 text-white"></i> Quienes somos </h2>
+                        <p class="text-white-75 mb-4" style="text-align: justify;">Somos una empresa <strong>familiar</strong> establecida en Argentina desde 1993, dedicada a la importación y comercialización de repuestos para automóviles. Nos especializamos en vehículos japoneses y coreanos.
+                
+                        El automóvil es uno de los bienes más importantes en la vida de los argentinos, siendo este el medio de transporte que elegimos para movilizarnos y también como herramienta esencial de trabajo. El correcto arreglo y mantenimiento de nuestros vehículos es indispensable, para ello estamos nosotros, para brindar y dar acceso a los repuestos necesarios.</p>
                         <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
                     </div>
-
-                    <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000">
-                        <h2 class="text-white mt-0">Vision</h2>
-                        <div class="mb-2"><i class="bi bi-eye fs-1 text-white"></i></div>
-                        <p class="text-white-75 mb-4">Somos una empresa familiar establecida en Argentina desde 1993, dedicada a la
-                            importación y comercialización de repuestos para automóviles. Nos especializamos
-                            en vehículos japoneses y coreanos.</p>
+                    <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="text-white mt-3"><i class="bi bi-check2-circle fs-1 text-white"></i> Mision</h2>
+                        <p class="text-white-75 mb-4" style="text-align: justify;">Somos una empresa familiar establecida en Argentina desde 1993, dedicada a la importación y comercialización de repuestos para automóviles. Nos especializamos en vehículos japoneses y coreanos.
+                
+                        El automóvil es uno de los bienes más importantes en la vida de los argentinos, siendo este el medio de transporte que elegimos para movilizarnos y también como</p>
                         <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
                     </div>
-                    
+                    <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="text-white mt-3"><i class="bi bi-eye fs-1 text-white"></i> Vision</h2>
+                        <p class="text-white-75 mb-4" style="text-align: justify;">Somos una empresa familiar establecida en Argentina desde 1993, dedicada a la importación y comercialización de repuestos para automóviles. Nos especializamos en vehículos japoneses y coreanos.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            �ncidunt ut laoreet dolore magna aliquam erat
+                            volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci ta�on ullamcorper suscipit lobor-
+                            �s nisl ut aliquip ex ea commodo consequat. </p>
+                        <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
+                    </div>
+                </div>
+                
                 </div>
             </div>
         </section>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-white text-center mt-0">Nuestros servicios</h2>
-                <hr class="divider" />
                 <div class="row gx-3 gx-lg-4 justify-content-center">
                     <div class="col-lg-2 col-md-6 text-center">
                         <div class="mt-5" data-aos="flip-left" data-aos-duration="1000">
-                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                            <div class="mb-1"><img src="assets/iconos/apreton-de-manos.png" alt=""></div>
                             <h3 class="text-white h4 mb-2">Asesoramiento profesional</h3>
                             <!-- <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p> -->
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 text-center" data-aos="flip-left"data-aos-duration="1000">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <div class="mb-1"><img src="assets/iconos/apoyo.png" alt=""></div>
                             <h3 class="text-white h4 mb-2">Atencion telefonica y perzonalizada</h3>
                             <!-- <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p> -->
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 text-center" data-aos="flip-left"data-aos-duration="1000">
                         <div class="mt-5" data-aos="flip-left">
-                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <div class="mb-1"><img src="assets/iconos/entrega-urgente.png" alt=""></div>
                             <h3 class="text-white h4 mb-2">Envios programados</h3>
                             <!-- <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p> -->
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 text-center" data-aos="flip-left"data-aos-duration="1000">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <div class="mb-2"><img src="assets/iconos/paquete.png" alt=""></div>
                             <h3 class="text-white h4 mb-2">Retiro express</h3>
                             <!-- <p class="text-muted mb-0">Is it really open source if it's not made with love?</p> -->
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 text-center" data-aos="flip-left" data-aos-duration="1000">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi bi-geo-alt fs-1 text-primary"></i></div>
+                            <div class="mb-1"><img src="assets/iconos/argentina.png" alt=""></div>
                             <h3 class="text-white h4 mb-2">Alcance a todo el pais</h3>
                             <!-- <p class="text-muted mb-0">Is it really open source if it's not made with love?</p> -->
                         </div>
@@ -185,9 +176,33 @@
                 </div>
             </div>
         </section>
+
+
+                <!-- ======= Clients Section ======= -->
+        <!-- Contenedor del slider -->
+        <section class="page-section d-flex align-items-center" id="Carousel">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 text-center">
+                        <h2><strong>Principales</strong> <span class="text-white mt-0">Marcas</span></h2>
+                        <h4 class="text-white mt-0">Estas son algunas de las marcas que trabajamos</h4>
+                    </div>
+                </div>
+                <div class="logo-slider mt-3 mb-3">
+                    <div><img src="assets/Logos productos/logo_hussan.jpg" alt="Logo 1"></div>
+                    <div><img src="assets/Logos productos/logo_mega.jpg" alt="Logo 1"></div>
+                    <div><img src="assets/Logos productos/logo_mitsuboshi.jpg" alt="Logo 1"></div>
+                    <div><img src="assets/Logos productos/logo_npw.jpg" alt="Logo 1"></div>
+                    <div><img src="assets/Logos productos/logo_sd.jpg" alt="Logo 1"></div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- End Clients Section -->
         
         <!-- =======SER CLIENTE SECTION ======= -->
-        <section class="page-section bg-primary" id="about">
+<!--         <section class="page-section bg-primary" id="about">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-9 text-center" data-aos="fade-up" data-aos-duration="1000">
@@ -198,64 +213,24 @@
 
                         <h5 class="text-white-75  text-start"><strong>Cómo realizar un pedido?</strong></h5>
                         <p class="text-white-75  text-start" >Puede realizar su pedido por mail, Whatsapp o llamando a nustra central telefónica</p>
-                        <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-
-
-        <!-- ======= Clients Section ======= -->
-        <!-- Contenedor del slider -->
-        <section class="page-section" id="Carousel">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div  class="col-lg-9 text-center">
-                        <h2 class="text-white-75">Principales marcas de respuestos:</h2>
-                    </div>
-                </div>
-                <div class="logo-slider">
-                    <div><img src="assets/Logos vechiculos/logo_nissan.jpg" alt="Logo 1"></div>
-                    <div><img src="assets/Logos vechiculos/Logo_Mazda.png" alt="Logo 2"></div>
-                    <div><img src="assets/Logos vechiculos/Logo_Suzuki.png" alt="Logo 3"></div>
-                    <div><img src="assets/Logos vechiculos/logo_toyota.jpg" alt="Logo 3"></div>
-                    <div><img src="assets/Logos vechiculos/logo_mitsubishi.jpg" alt="Logo 3"></div>
-                    
-                </div>
-            </div>
-        </section>
-        
-
-
-
-
-        <!-- End Clients Section -->
-
-
-
-        <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-
-                </div>
-            </div>
-        </div>
-        
 
         <!-- Footer-->
         <footer class="page-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 text-white">
                             <!-- Columna izquierda -->
-                            <h5>Información de la empresa</h5>
+                            <h3>Contacto</h3>
                             <p>Texto de información sobre la empresa.</p>
                             <p>Dirección: Dirección de la empresa</p>
                             <p>Teléfono: Número de teléfono</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 text-white">
                             <!-- Columna derecha -->
                             <h5>Ubicación</h5>
                             <!-- Aquí debes insertar el código de tu mapa de Google -->
@@ -299,6 +274,24 @@
                 });
             });
         </script>
+
+        <!-- login -->
+        <script>
+            // Obtener referencia al formulario
+            const form = document.getElementById('loginForm');
+          
+            // Agregar un controlador de eventos al botón "Ingresar"
+            const ingresarBtn = document.querySelector('button[name="btnIngresar"]');
+            ingresarBtn.addEventListener('click', function(event) {
+              event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+          
+              // Validar el formulario si es necesario antes de enviarlo
+          
+              // Enviar el formulario
+              form.submit();
+            });
+          </script>
+          
 
     </body>
 </html>
